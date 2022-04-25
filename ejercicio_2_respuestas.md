@@ -1,6 +1,7 @@
 2.1 Crearía una store,
 
-<!-- import { createStore, combineReducers } from "redux"
+```bash
+import { createStore, combineReducers } from "redux"
 import loginReducer from "./loginReducer"
 import clientsReducer from "./clientsReducer"
 import dataReducer from "./clientsReducer"
@@ -11,12 +12,15 @@ const rootReducer = combineReducers({
 })
 
 const store = createStore(rootReducer)
+export default store
 
-export default store -->
+```
 
 luego los reducers para manejar el estado
 
-<!-- reducer(state = store, action) {
+```bash
+
+reducer(state = store, action) {
   switch (action.type) {
     case "@login":
       return {
@@ -39,11 +43,13 @@ luego los reducers para manejar el estado
             data: action.payload.data,
         }
     }
--->
+
+```
 
 por ultimo las actions para dejar el codigo mas limpio
 
-<!-- export function login(data) {
+```bash
+export function login(data) {
   return {
     type: "@login",
     payload: {
@@ -68,13 +74,16 @@ export function setData(data) {
     },
 }
 
--->
+
+```
 
 luego utilizaria el dispatch y el susbscribe en los componentes que sea necesario
 
 2.2 Para agregar nuevas rutas utilizaría react-router y con los componentes BrowserRouter, Routes y route configuraría la vista con sus respectivos componentes.
 
-<!-- ReactDOM.render(
+```bash
+
+ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path="/login" element={<Login />}>
@@ -83,4 +92,6 @@ luego utilizaria el dispatch y el susbscribe en los componentes que sea necesari
     </Routes>
     </BrowserRouter>,
   document.getElementById("root")
-) -->
+)
+
+```

@@ -1,0 +1,22 @@
+.form-title {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 30rem;
+  margin: auto;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: auto;
+  border-radius: 1rem;
+  padding: 3rem;
+  box-shadow: -5px 0 30px lightgray;
+}
+
+.form-container > .label {
+  margin-top: 2rem;
+}

@@ -1,0 +1,46 @@
+.App {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #eff5ff;
+  padding: 3rem 0;
+}
+
+input {
+  border-radius: 0.5rem;
+  outline: none;
+  border: 2px solid lightgray;
+  padding: 0.6rem;
+}
+
+label {
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+  color: #0851ac;
+}
+
+button {
+  border: none;
+  margin-top: 2rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(to right, #48c6ac, #0058e5);
+  color: #fff;
+  cursor: pointer;
+}
+
+.blue {
+  background-color: #0851ac;
+}
+
+.blue--text {
+  color: #0851ac;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.white--text {
+  color: #fff;
+}
